@@ -4,6 +4,7 @@ body{
     padding: 0px;
     font-family: 'Roboto', sans-serif;
     flex-direction: column;
+    justify-content: space-between;
 }
 .header {
     display: flex;
@@ -74,4 +75,68 @@ li {
     max-width: 400px;
     flex: 1 1 auto;
     border-radius: 15px;
+}
+.cuerpocards {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 300px;
+    gap: 32px;
+    color: #1F2937;
+    justify-content: center;
+    text-align: center;
+    font-weight: 900;
+    font-size: 22px;
+    flex: auto;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    gap: 16px
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    font-size: 12px;
+    font-weight: 500;
+    align-items: center;
+    gap: 16px;
+    padding: 0px;
+}
+.card img {
+    height: 150px;
+    width: 150px;
+    border: #3882F6 4px solid;
+    border-radius: 15px;
+}
+.cuerpoquote {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    padding: 100px 300px;
+    text-align: right;
+    font-weight: 900;
+}
+.quote {
+    font-style: italic;
+    font-size: 32px;
+    text-align: left;
+    font-weight: 100;
+}
+.cuerpoaction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    gap: 24px;
+    background-color: #3882F6;
+}
+.footer {
+    color: #E5E7EB;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0px;
+    justify-content: center;
+    background-color: #1F2937;
 }
