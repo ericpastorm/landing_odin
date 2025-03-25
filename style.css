@@ -5,24 +5,28 @@ body{
     font-family: 'Roboto', sans-serif;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 .header {
     display: flex;
     align-items: center;
     flex-grow: 1;
     margin: 0px;
-    padding: 24px;
+    padding: 24px 300px;
     justify-content: space-between;
     background-color: #1F2937;
+    font-size: 20px;
+    gap: 24px;
+    flex-wrap: wrap;
+    text-align: center;
 }
 .logo {
-    font-size: 24px;
+    font-size: 32px;
     color: white;
 }
-ul {
-    list-style-type:none;
-    padding:8px;
-    margin:0px;
+.links {
+    display: flex;
+    gap: 24px;
 }
 li {
    display:inline;
@@ -39,15 +43,18 @@ li {
 .cuerpo1{
     display: flex;
     background-color: #1F2937;
-    padding: 24px;
+    padding: 100px 300px;
     gap: 24px;
     color: white;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .awesome {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
+    justify-content: center;
+    max-width: 50%;
+    gap: 16px;
 }
 .awesome h1 {
     font-size: 48px;
@@ -72,41 +79,44 @@ li {
     color: #3882F6;
 }
 .cuerpo1 img {
-    max-width: 400px;
+    width: 400px;
     flex: 1 1 auto;
     border-radius: 15px;
+    min-width: 0;
 }
 .cuerpocards {
     display: flex;
     flex-direction: column;
     padding: 100px 300px;
+    margin: 0px;
     gap: 32px;
     color: #1F2937;
     justify-content: center;
     text-align: center;
     font-weight: 900;
     font-size: 22px;
-    flex: auto;
 }
 .cards {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 0px;
-    gap: 16px
+    gap: 32px
 }
 .card{
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
-    font-size: 12px;
+    flex-wrap: wrap;
+    width: 200px;
+    font-size: 16px;
     font-weight: 500;
     align-items: center;
     gap: 16px;
     padding: 0px;
 }
 .card img {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border: #3882F6 4px solid;
     border-radius: 15px;
 }
@@ -119,17 +129,43 @@ li {
 }
 .quote {
     font-style: italic;
-    font-size: 32px;
+    font-size: 42px;
     text-align: left;
     font-weight: 100;
 }
 .cuerpoaction {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 24px;
+    justify-content: space-around;
+    margin: 100px 300px;
+    padding: 30px;
     gap: 24px;
+    color: white;
     background-color: #3882F6;
+    border-radius: 15px;
+    font-size: 24px;
+    flex-wrap: wrap;
+}
+.cuerpoaction button {
+    background-color: #3882F6;
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    border: 2px white solid; 
+}
+.cuerpoaction button:hover {
+    background-color: #193158;
+    color: #3882F6;
+    border: 2px #193158 solid; 
+}
+.cuerpoaction #titulo {
+    font-weight: 900;
+}
+.cuerpoaction #texto {
+    font-weight: 300;
 }
 .footer {
     color: #E5E7EB;
@@ -139,4 +175,53 @@ li {
     margin: 0px;
     justify-content: center;
     background-color: #1F2937;
+}
+@media (max-width: 1200px) {  /* Para pantallas pequeñas */
+    .header {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+    .awesome {
+        max-width: 50%;
+    }
+    .cuerpo1 {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+    .cuerpocards {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+    .cuerpoquote {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+    .cuerpoaction {
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+    }
+}
+@media (max-width: 768px) {  /* Para móviles */
+    .header {
+        padding: 40px !important;
+    }
+    .logo {
+        flex-grow: 1;
+    }
+    .awesome {
+        max-width: 100%;
+    }
+    .cuerpo1 {
+        padding: 40px !important;
+    }
+    .cuerpocards {
+        padding: 40px !important;
+    }
+    .cuerpoquote {
+        padding: 40px !important;
+    }
+    .cuerpoaction {
+        margin-left: 40px !important;
+        margin-right: 40px !important;
+    }
 }
